@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<bookmark source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <datasources>
+    <datasource caption='Ofis Malzemeleri (Ofis+Malzemeleri)' inline='true' name='federated.015yfvv0itakwl0zqjbau1wq30hz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Nüfus+Veri+Seti' name='excel-direct.0x6t9mf1jg8dhv1bl52820265fb2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ContraVolta/Desktop/GitHub/02_DS_DATA_SCIENCE/TABLEAU - UDEMY/Nüfus+Veri+Seti.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0x6t9mf1jg8dhv1bl52820265fb2' name='Nüfus Veri Seti' table='[&apos;Nüfus Veri Seti$&apos;]' type='table'>
+          <columns gridOrigin='A1:C163:no:A1:C163:0' header='yes' outcome='6'>
+            <column datatype='date' name='Yıl' ordinal='0' />
+            <column datatype='integer' name='Nüfus' ordinal='1' />
+            <column datatype='string' name='İl' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0x6t9mf1jg8dhv1bl52820265fb2' name='Nüfus Veri Seti' table='[&apos;Nüfus Veri Seti$&apos;]' type='table'>
+          <columns gridOrigin='A1:C163:no:A1:C163:0' header='yes' outcome='6'>
+            <column datatype='date' name='Yıl' ordinal='0' />
+            <column datatype='integer' name='Nüfus' ordinal='1' />
+            <column datatype='string' name='İl' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Nüfus Veri Seti]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C163:no:A1:C163:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yıl</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Yıl]</local-name>
+            <parent-name>[Nüfus Veri Seti]</parent-name>
+            <remote-alias>Yıl</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nüfus Veri Seti_B8D4409436D144BC89DFF9C4D29E936B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nüfus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nüfus]</local-name>
+            <parent-name>[Nüfus Veri Seti]</parent-name>
+            <remote-alias>Nüfus</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nüfus Veri Seti_B8D4409436D144BC89DFF9C4D29E936B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>İl</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[İl]</local-name>
+            <parent-name>[Nüfus Veri Seti]</parent-name>
+            <remote-alias>İl</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nüfus Veri Seti_B8D4409436D144BC89DFF9C4D29E936B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Nüfus Veri Seti' datatype='table' name='[__tableau_internal_object_id__].[Nüfus Veri Seti_B8D4409436D144BC89DFF9C4D29E936B]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Nüfus Veri Seti' id='Nüfus Veri Seti_B8D4409436D144BC89DFF9C4D29E936B'>
+            <properties context=''>
+              <relation connection='excel-direct.0x6t9mf1jg8dhv1bl52820265fb2' name='Nüfus Veri Seti' table='[&apos;Nüfus Veri Seti$&apos;]' type='table'>
+                <columns gridOrigin='A1:C163:no:A1:C163:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Yıl' ordinal='0' />
+                  <column datatype='integer' name='Nüfus' ordinal='1' />
+                  <column datatype='string' name='İl' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <window>
+    <cards>
+      <edge name='left'>
+        <strip size='160'>
+          <card type='pages' />
+          <card type='filters' />
+          <card type='marks' />
+        </strip>
+      </edge>
+      <edge name='top'>
+        <strip size='2147483647'>
+          <card type='columns' />
+        </strip>
+        <strip size='2147483647'>
+          <card type='rows' />
+        </strip>
+        <strip size='2147483647'>
+          <card type='title' />
+        </strip>
+      </edge>
+      <edge name='right'>
+        <strip size='160'>
+          <card pane-specification-id='0' param='[federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk]' type='color' />
+        </strip>
+      </edge>
+    </cards>
+    <viewpoint>
+      <highlight>
+        <color-one-way>
+          <field>[federated.015yfvv0itakwl0zqjbau1wq30hz].[none:İl:nk]</field>
+          <field>[federated.015yfvv0itakwl0zqjbau1wq30hz].[yr:Yıl:ok]</field>
+        </color-one-way>
+      </highlight>
+      <default-map-tool-selection tool='2' />
+    </viewpoint>
+    <simple-id uuid='{E03A632A-C595-4B69-B5F5-A15DB80E1B0F}' />
+  </window>
+  <table>
+    <view>
+      <datasources>
+        <datasource caption='Ofis Malzemeleri (Ofis+Malzemeleri)' name='federated.015yfvv0itakwl0zqjbau1wq30hz' />
+      </datasources>
+      <datasource-dependencies datasource='federated.015yfvv0itakwl0zqjbau1wq30hz'>
+        <column datatype='integer' name='[Nüfus]' role='measure' type='quantitative' />
+        <column datatype='date' name='[Yıl]' role='dimension' type='ordinal' />
+        <column-instance column='[İl]' derivation='None' name='[none:İl:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Nüfus]' derivation='Sum' name='[sum:Nüfus:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Yıl]' derivation='Year' name='[yr:Yıl:ok]' pivot='key' type='ordinal' />
+        <column datatype='string' name='[İl]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <shelf-sorts>
+        <shelf-sort-v2 dimension-to-sort='[federated.015yfvv0itakwl0zqjbau1wq30hz].[none:İl:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk]' shelf='rows' />
+      </shelf-sorts>
+      <aggregation value='true' />
+    </view>
+    <style>
+      <style-rule element='mark'>
+        <encoding attr='color' center='2000000.0' field='[federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk]' num-steps='2' type='custom-interpolated'>
+          <color-palette custom='true' name='' type='ordered-diverging'>
+            <color>#e4e1e3</color>
+            <color>#e3e0e2</color>
+            <color>#e2dfe1</color>
+            <color>#e1dee0</color>
+            <color>#e0dedf</color>
+            <color>#dfddde</color>
+            <color>#dedcdd</color>
+            <color>#dddbdc</color>
+            <color>#dcdbdb</color>
+            <color>#dbdada</color>
+            <color>#dad9d9</color>
+            <color>#d9d9d9</color>
+            <color>#c4cfc5</color>
+            <color>#b0c5b2</color>
+            <color>#9ebba1</color>
+            <color>#8cb290</color>
+            <color>#7ba880</color>
+            <color>#6c9e71</color>
+            <color>#5d9463</color>
+            <color>#508b56</color>
+            <color>#43814a</color>
+            <color>#38773f</color>
+            <color>#2e6e35</color>
+          </color-palette>
+        </encoding>
+      </style-rule>
+    </style>
+    <panes>
+      <pane selection-relaxation-option='selection-relaxation-allow'>
+        <view>
+          <breakdown value='auto' />
+        </view>
+        <mark class='Automatic' />
+        <encodings>
+          <color column='[federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk]' />
+          <text column='[federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk]' />
+        </encodings>
+        <style>
+          <style-rule element='mark'>
+            <format attr='mark-labels-cull' value='true' />
+            <format attr='mark-labels-show' value='true' />
+          </style-rule>
+        </style>
+      </pane>
+    </panes>
+    <rows>[federated.015yfvv0itakwl0zqjbau1wq30hz].[none:İl:nk]</rows>
+    <cols>([federated.015yfvv0itakwl0zqjbau1wq30hz].[yr:Yıl:ok] * [federated.015yfvv0itakwl0zqjbau1wq30hz].[sum:Nüfus:qk])</cols>
+  </table>
+</bookmark>
