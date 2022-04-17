@@ -1,0 +1,6 @@
+Excel > Data > From Web "https://countryeconomy.com/countries/groups/european-economic-area"
+
+Data has been standardized and data types corrected.
+
+Let's start to analyze with Tableau.
+
