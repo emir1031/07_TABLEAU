@@ -1,6 +1,25 @@
-Excel > Data > From Web "https://countryeconomy.com/countries/groups/european-economic-area"
+1. Data Scraping from web via Excel.
+	Excel > Data > From Web 
+	"https://countryeconomy.com/countries/groups/european-economic-area"
 
+2. Understanding the data.
+	Columns:
+	- Countries = Consists of EEA country names.
+	- Population = It contains the population information of the corresponding countries.
+	- Annual GDP = Anual gross domestic product. The total monetary value of all final goods and services produced. (and sold on the market)
+	- GDP per capita = Measures a country's economic output per person and is calculated by dividing the GDP of a country by its population.
+	- HDI = The Human Development Index. Measured on the basis of Life Expectancy Index (Long and healthy life), Education Index (Knowledge) and Income Index (Standard of Living).
+	- Debt = It contains debts info of the corresponding countries.
+	- Debt (%GDP) = Debt-to-GDP Ratio. The metric comparing a country's public debt to its gross domestic product (GDP).
+	- Deficit (%GDP) = Occurs when expenses exceed revenues, imports exceed exports, or liabilities exceed assets.
+
+3. Converting data into usable format.
 Data has been standardized and data types corrected.
 
-Let's start to analyze with Tableau.
+4. Let's prepare our dashboard with IBM Cognos.
+
+"https://eu2.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.my_folders%2FEEA%2BCountries%2BGDP%2BDashboard&action=view&mode=dashboard&subView=model00000180424533e2_00000000"
+
+
+
 
